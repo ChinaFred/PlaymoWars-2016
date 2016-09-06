@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gestion simplifiée d'un wargame ">
+    <meta name="author" content="Kassbinette">
+
+    <title>Playmo Wars</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<header class="business-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="tagline">Playmo Wars</h1>
+					<h2 class="tagline subtitle">Le jeu qui nous éclate</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Playmo Wars</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 2</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 3</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 4</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar " role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flot.html">Flot Charts</a>
+                                </li>
+                                <li>
+                                    <a href="morris.html">Morris.js Charts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html">Panels and Wells</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Notifications</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="icons.html"> Icons</a>
+                                </li>
+                                <li>
+                                    <a href="grid.html">Grid</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li class="active">
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a class="active" href="blank.html">Blank Page</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Login Page</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Work here -->
+						<!-- .row -->
+						<div class="row">
+							<div class="col-lg-12">
+								<h1 class="page-header">Par ici la castagne ! </h1>
+							</div>
+							<!-- /.col-lg-12 -->
+						</div>		
+						<!-- /.row -->
+						<!-- Formulaire de bataille--->
+						<div class="panel panel-default">
+							
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-lg-6">
+									
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3>Assaillant</h3>
+											</div>
+											<div class="panel-body">
+												<div class="form-group col-lg-6">
+													<label for="att-army-ddl">Armée</label>
+													<select class="form-control" id="att-army-ddl" onchange="attArmyDdl_Changed(this.value);showCombatCard();">
+														
+													</select>
+													
+												</div>
+												<div class="form-group col-lg-6">
+													<label for="att-char-ddl">Personnage</label>
+													<select class="form-control" id="att-char-ddl" onchange="showCharCards(this.value,'att-char-card');showCombatCard();" >
+														
+													</select>													
+												</div>
+												<div class="form-group col-lg-12" id="att-char-card">
+												
+												</div>
+											</div>
+											<!--panel-body-->
+										</div>
+										<!--panel-default-->
+									</div>
+									<!--col-lg-6-->
+									<div class="col-lg-6">									
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h3>Défenseur</h3>
+											</div>
+											<div class="panel-body">
+												<div class="form-group col-lg-6">
+													<label for="def-army-ddl">Armée</label>
+													<select class="form-control" id="def-army-ddl" onchange="feedDdlCharacters(this.value,'def-char-ddl');showCombatCard();">
+														
+													</select>
+													
+												</div>
+												<div class="form-group col-lg-6">
+													<label for="def-char-ddl">Personnage</label>
+													<select class="form-control" id="def-char-ddl" onchange="showCharCards(this.value,'def-char-card');showCombatCard();" >
+														
+													</select>													
+												</div>
+												<div class="col-lg-12" id="def-char-card">
+												
+												</div>	
+																						
+											</div>
+											<!--panel-body-->
+											
+										</div>
+										<!--panel-default-->
+									</div>
+									<!--col-lg-6-->
+									
+									<div class="col-lg-12" >
+										<div class="panel panel-default" >
+										
+											<div class="panel-heading">
+												<h3>Combat</h3>
+											</div>
+											<div class="panel-body">
+												<div class="col-lg-12" >
+													<span id="fightRoundSummary"></span>
+													<div class="form-group col-lg-12 center-block" >
+														<button type="button" id="btnAttack" class="btn btn-success center-block" onclick="resolveAttacks();">Jet(s) d'attaque</button>
+													</div>
+												</div>
+												
+												
+												
+												
+												<div class="container" id="resFight"  >												
+													<div class="col-lg-12 center-block ">
+														<h4>Résultat des frappes</h4>
+														<div  id="divResAtt" class="row" >
+															
+														
+														</div>
+														<p><span id="txtResAtt"></span></p>
+														
+														<div class="form-group col-lg-12 center-block" id= "divAttHit" >
+															<button type="button" id="btnHurt" class="btn btn-warning center-block" onclick="resolveHurts();">Jet(s) de blessure</button>
+														</div>
+														
+													</div>	
+													
+													<div class="col-lg-12 center-block " id="blockResHurt" >
+														
+															<h4>Résultat des jets de blessures</h4>
+															<div  id="divResHurt" class="row" >
+																
+															
+															</div>
+															<p><span id="txtResHurt"></span></p>
+														
+															<div class="col-lg-12 center-block" >
+																<button type="button" id="btnArmor" class="btn btn-danger center-block" onclick="resolveArmors();" >Jet(s) d'armure</button>
+															</div>
+													</div>
+													
+													<div class="col-lg-12 center-block " id="blockResArmor" >
+														
+															<h4>Résultat des jets d'armure</h4>
+															<div  id="divResArmor" class="row" >
+																
+															
+															</div>
+															<p><span id="txtResArmor"></span></p>
+														
+															
+													</div>
+													
+												</div>
+												
+											</div>
+											
+										</div>
+									</div>		
+								
+								</div>
+								<!--row-->
+							</div>
+							<!--panel-body-->
+						</div>
+						<!--panel-defautl-->
+						<!-- Work till here -->
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+	
+	<!--Javascript prope à cette application -->
+	<script src="../js/PlaymoWars.js"></script>
+	<script src="../js/DiceRoller/JqueryDiceRoller.js"></script>
+	
+	
+	<script>
+		var thisFightRound;
+	
+	
+		function feedDdlArmies(ddlName,exc){//exc l'id de l'armée exclue, ddl armée a remplir 
+			$("#"+ddlName).empty();
+	
+			var a = getArmies();
+			
+			for(var i=0; i<a.length; i++)
+			{
+				//alert (" " + a[i].id + "  " + exc + "  " + (a[i].id!= exc));
+				if ((a[i].id!= exc ))
+				{
+				
+					$("#"+ddlName).append($('<option>', {
+						value: a[i].id,
+						text: a[i].name
+					}));
+				
+				}				
+			}
+			
+		}
+	
+	
+	// id d'armee et ddl characters à remplir 
+		function feedDdlCharacters(id,ddlName){
+			$("#"+ddlName).empty();
+			var a = getArmyById(id);
+			
+			for(var i=0; i<a.characters.length; i++)
+			{		
+				c = a.characters[i];
+			
+							
+				$("#"+ddlName).append($('<option>', {
+					value: c.id,
+					text: c.name
+				}));
+			}
+			
+			showCharCards($("#"+ddlName + " option:selected").val(),$("#"+ddlName).parent().next().attr('id'));
+			
+		}
+		
+		function attArmyDdl_Changed(id){
+			
+			feedDdlCharacters(id,'att-char-ddl');
+			feedDdlArmies("def-army-ddl",$("#att-army-ddl option:selected").val());
+			feedDdlCharacters($("#def-army-ddl option:selected").val(),'def-char-ddl');
+		}
+		
+		
+		
+		function showCharCards(id,card){
+			
+			var c = getCharacterById(id);
+			$("#"+card).html(c.getCharacterCardHtml());
+			
+		}
+		
+		function showCombatCard(){		
+			var attChar = getCharacterById($("#att-char-ddl option:selected").val());
+			var defChar = getCharacterById($("#def-char-ddl option:selected").val());
+			thisFightRound = fightRound(attChar, defChar);
+			// mettre le texte
+			$("#fightRoundSummary").html(thisFightRound.getFightRoundHtml());		
+			//Cacher les blocks non nécessaires			
+			$("#resFight").hide(0);
+			$("#blockResHurt").hide(0);
+			$("#blockResArmor").hide(0);
+			//vider les boites de réceptions et de texte
+			$("#divResAtt").html("");
+			$("#divResHurt").html("");
+			$("#txtResAtt").html("");
+			$("#txtResHurt").html("");
+			// remettre les boutons en état
+			enable("#btnAttack");
+			enable("#btnHurt").hide();
+			enable("#btnArmor").hide();				
+		}
+		
+		function addDiceResultBox(to,id){
+			jQuery("<div>")
+					.attr('id',id )
+					.attr("style",'float:left;padding:20px')
+					.appendTo($(to));			
+		}
+		
+		function disable(target){
+			$(target).addClass("disabled").prop("disabled",true);
+			return $(target);
+		}
+		
+		function enable(target){
+			$(target).removeClass("disabled").prop("disabled",false);
+			
+			return $(target);
+		}
+		
+		function addFloatingPicture(target,picturePath){									
+			jQuery("<img>")
+			.attr('src', picturePath)
+			.appendTo($( target))
+			.each(
+				function(){
+						var x= $(target).position().left  ;
+						var y= $(target).position().top + 10;
+						$(this).css({
+										  position: 'absolute',
+										  zIndex:   5000,
+										  top:      y, 
+										  left:     x
+									});
+				
+						}
+			).show(1000);					
+		}
+		
+		function addPow(target){
+			addFloatingPicture(target,'../Pictures/Pow.png');
+		}
+		
+		function addMissed(target){
+			addFloatingPicture(target,'../Pictures/missed.png');
+		}
+		
+		
+		function resolveAttacks(){
+			
+			$("#resFight").show(0);
+			disable("#btnAttack");
+			
+			$(window).scrollTop($('#resFight').offset().top);
+			for(var i = 0 ; i<thisFightRound.attackingChar.attack;i++)
+			{
+					addDiceResultBox("#divResAtt","attResDice" +i);
+					var d = Dice("#attResDice" + i);	
+					d.animateRoll();
+					thisFightRound.resultsHit[i]=d.result;
+											
+					if (thisFightRound.resultsHit[i] >=  thisFightRound.scoreToHit())
+					{
+						setTimeout(addPow,1000,"#attResDice" + i);	
+						thisFightRound.nbHits++;						
+					}	
+					if(thisFightRound.nbHits>0)
+					{
+						$("#txtResAtt").html("<strong>" + thisFightRound.nbHits + "</strong> frappe(s) touche(nt).");
+						enable("#btnHurt").show(1000);
+					}
+					else 
+						$("#txtResAtt").html("Aucune frappe ne touche.");
+					
+			}
+		}
+		
+		function resolveHurts(){
+			$("#blockResHurt").show(0);
+			disable("#btnHurt");
+			$(window).scrollTop($('#blockResHurt').offset().top);
+			
+			for(var i = 0 ; i<thisFightRound.nbHits;i++)
+			{
+					
+		
+					addDiceResultBox("#divResHurt","hurtResDice" +i);
+					var d = Dice("#hurtResDice" + i);	
+					d.animateRoll();
+					thisFightRound.resultsHurt[i]=d.result;
+											
+					if (thisFightRound.resultsHurt[i] >=  thisFightRound.scoreToHurt())
+					{
+						setTimeout(addPow,1000,"#hurtResDice" + i);	
+						thisFightRound.nbHurts++;						
+					}	
+					if(thisFightRound.nbHurts>0)
+					{
+						enable("#btnArmor").show(1000);
+						$("#txtResHurt").html("<strong>" + thisFightRound.nbHurts + "</strong> touches(s) blesse(nt).");
+					}
+					else 
+						$("#txtResHurt").html("Aucune touche ne blesse.");
+					
+			}
+			thisFightRound.nbWounds = thisFightRound.nbHurts;
+		}
+		
+		function resolveArmors(){
+			$("#blockResArmor").show(0);
+			disable("#btnArmor");
+			$(window).scrollTop($('#blockResArmor').offset().top);
+			
+			for(var i = 0 ; i<thisFightRound.nbHurts;i++)
+			{
+					
+		
+					addDiceResultBox("#divResArmor","armorResDice" +i);
+					var d = Dice("#armorResDice" + i);	
+					d.animateRoll();
+					thisFightRound.resultsArmor[i]=d.result;
+											
+					if (thisFightRound.resultsArmor[i] >=  thisFightRound.scoreToArmor())
+					{
+						setTimeout(addMissed,1000,"#armorResDice" + i);	
+						thisFightRound.nbWounds--;					
+					}	
+					else 
+					{
+						setTimeout(addPow,1000,"#armorResDice" + i);	
+					}
+					
+					var resHtml = "<p><strong>" + (thisFightRound.nbHurts - thisFightRound.nbWounds)+ "</strong> blessure(s) arrêtée(s) par l'armure.</p>" ;
+					if (thisFightRound.nbWounds==0)
+						resHtml += "<p><strong>" +thisFightRound.defendingChar.name+ "</strong> n'est pas blessé!" 
+					else 
+					{
+						resHtml += "<p><strong>" +thisFightRound.defendingChar.name+ "</strong> est blessé, perd <strong>" + thisFightRound.nbWounds+" PV</strong>  et " 
+						if(thisFightRound.defendingChar.life>thisFightRound.nbWounds)
+						{
+							resHtml += "<strong>survit</strong> à ses blessures."; 
+						}
+						else 
+						{
+							resHtml += "<strong>succombe</strong> à ses blessures.";
+						}
+					}
+					$("#txtResArmor").html(resHtml);
+					
+					
+					
+			}
+		}
+		
+		
+		
+		//  init ddl att
+		feedDdlArmies("att-army-ddl",-1); 
+		feedDdlCharacters($("#att-army-ddl option:selected").val(),"att-char-ddl");
+
+		
+		//init ddl def
+		feedDdlArmies("def-army-ddl",$("#att-army-ddl option:selected").val()); 
+		feedDdlCharacters($("#def-army-ddl option:selected").val(),"def-char-ddl");
+	
+	
+		showCombatCard();
+
+		
+	
+	
+		
+		
+	</script>
+	
+</body>
+
+</html>
